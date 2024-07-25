@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="src/index.js" defer></script>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <header>
+        <form>
+            <label for="location">Location:</label>
+            <input id='location' type="text" name="location">
+            <input id="submit-btn" type="submit" value='submit'>
+        </form>
+        <h1>Weather Forecast</h1>
+        <form id="unit">
+            <select name="unit" id="unit-select" onChange="handleUnitChange(this.value)">
+                <option value="metric">C</option>
+                <option value="us">F</option>
+            </select>
+        </form>
+    </header>
+
+    <div id="container">
+        <div id="content">
+
+            <h2 class="city">&nbsp;</h1>
+            <div class="weather-data">
+                <div class="row">
+                    <h3>High:</h3>
+                    <p class="max"></p>
+                </div>
+                <div class="row">
+                    <h3>Average:</h3>
+                    <p class="average"></p>
+                </div>
+                <div class="row">
+                    <h3>Low:</h3>
+                    <p class="min"></p>
+                </div>
+                <div class="row">
+                    <h3>Forecast:</h3>
+                    <p class="condition"></p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="gif-container">
+                <img src="" alt="" class="gif">
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
